@@ -18,3 +18,5 @@ spec:
           name: guestbook-ui
           ports:
             - containerPort: 7777
+      imagePullSecrets:
+        - name: proxy-nexus-secret
