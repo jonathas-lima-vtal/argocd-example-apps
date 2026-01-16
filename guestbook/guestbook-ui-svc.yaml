@@ -5,6 +5,7 @@ metadata:
 spec:
   ports:
   - port: 7777
+    name: ping
     targetPort: 8080
   selector:
     app: guestbook-ui
