@@ -19,4 +19,4 @@ spec:
           ports:
             - containerPort: 7777
       imagePullSecrets:
-        - name: proxy-nexus-secret
+        - name: secret-oc
