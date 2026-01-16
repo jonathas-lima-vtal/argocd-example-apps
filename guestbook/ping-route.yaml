@@ -1,0 +1,16 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: ping
+  namespace: azure-devops-teste-hml
+spec:
+  host: ping.apps.ocparc-nprd.vtal.intra
+  to:
+    kind: Service
+    name: ping
+    weight: 100
+  port:
+    targetPort: ping
+  tls:
+    termination: edge
+  wildcardPolicy: None
