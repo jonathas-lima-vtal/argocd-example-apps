@@ -14,9 +14,9 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-        - image: hosted-docker-registry-azure-devops-nexus-prod.apps.ocpcorp.vtal.intra/teste_openshift_repo1/amb-dev:20260116.1
+        - image: hosted-docker-registry-azure-devops-nexus-prod.apps.ocpcorp.vtal.intra/teste_openshift_repo1/amb-dev:20260116.2
           name: guestbook-ui
           ports:
-            - containerPort: 80
+            - containerPort: 8080
       imagePullSecrets:
         - name: secret-oc
