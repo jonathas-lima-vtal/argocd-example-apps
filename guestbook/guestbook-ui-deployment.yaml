@@ -14,7 +14,7 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-        - image: gcr.io/google-samples/gb-frontend:v5
+        - image: ghcr.io/briceburg/ping-pong:0.1.0
           name: guestbook-ui
           ports:
-            - containerPort: 8080
+            - containerPort: 7777
