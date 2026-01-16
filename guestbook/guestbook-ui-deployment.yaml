@@ -14,7 +14,7 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-        - image: ghcr.io/briceburg/ping-pong:0.1.0
+        - image: proxy-docker-registry-azure-devops-nexus-prod.apps.ocpcorp.vtal.intra/briceburg/ping-pong:0.1.0
           name: guestbook-ui
           ports:
             - containerPort: 7777
